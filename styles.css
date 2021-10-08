@@ -126,7 +126,7 @@ header .title {
 }
 
 .theme-toggle:checked::after {
-	left: 50%;
+	left: 55%;
 }
 
 /* GRID TIME! */
