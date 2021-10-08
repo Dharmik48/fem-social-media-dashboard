@@ -142,7 +142,9 @@ main .dashboard {
 	align-items: center;
 	justify-content: space-around;
 	gap: 1em;
+	width: 350px;
 	padding: 1.5em;
+	border-radius: 0 0 0.35em 0.35em;
 	background-color: var(--card-bg);
 }
 
@@ -200,4 +202,60 @@ main .dashboard {
 
 .stats.stats-down {
 	color: var(--bright-red);
+}
+
+/* OVERVIEW SECTION */
+.overview {
+	display: flex;
+	flex-direction: column;
+	margin: 2.5em 0;
+}
+
+.overview h2 {
+	color: var(--text-number);
+	font-size: 1.75rem;
+}
+
+.overview-cards {
+	display: grid;
+	gap: 2em;
+	margin: 2em 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1.5em;
+	min-width: 350px;
+	padding: 1.5em;
+	background-color: var(--card-bg);
+	border-radius: 0.35em;
+}
+
+.bottom p {
+	color: var(--text-number);
+	font-size: 2.5em;
+}
+
+.top,
+.bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1024px) {
+	.dashboard,
+	.overview-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1600px) {
+	.dashboard,
+	.overview-cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
