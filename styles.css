@@ -63,7 +63,7 @@ body::before {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 2em 0;
+	padding: 2em 2em;
 }
 
 /* Let's go to MAIN🚢 */
@@ -142,7 +142,7 @@ main .dashboard {
 	align-items: center;
 	justify-content: space-around;
 	gap: 1em;
-	width: 350px;
+	width: 300px;
 	padding: 1.5em;
 	border-radius: 0 0 0.35em 0.35em;
 	background-color: var(--card-bg);
@@ -227,7 +227,7 @@ main .dashboard {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 1.5em;
-	min-width: 350px;
+	min-width: 300px;
 	padding: 1.5em;
 	background-color: var(--card-bg);
 	border-radius: 0.35em;
@@ -246,14 +246,14 @@ main .dashboard {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 1024px) {
+@media (min-width: 876px) {
 	.dashboard,
 	.overview-cards {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1350px) {
 	.dashboard,
 	.overview-cards {
 		grid-template-columns: repeat(4, 1fr);
